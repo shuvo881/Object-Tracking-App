@@ -1,4 +1,3 @@
-# gui/app.py
 import customtkinter as ctk
 import cv2
 from PIL import Image, ImageTk
@@ -56,7 +55,7 @@ class ObjectDetectionApp:
     
     def load_model(self):
         try:
-            model = YOLO('models/yolov8n.pt')  # or your custom model path
+            model = YOLO('models/yolo11n.pt')  # or your custom model path
             return model
         except Exception as e:
             print(f"Error loading model: {e}")
