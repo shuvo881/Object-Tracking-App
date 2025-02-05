@@ -35,7 +35,7 @@ class ObjectDetectionApp:
     
     def load_model(self):
         try:
-            model = YOLO('models/yolo11n.pt')
+            model = YOLO('runs/detect/train/weights/best.pt')
             return model
         except Exception as e:
             print(f"Error loading model: {e}")

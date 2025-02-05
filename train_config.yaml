@@ -1,0 +1,9 @@
+path: /Users/macbookpro/Documents/Codes/personal/Object-Tracking-App/data/dataset # dataset root dir
+train: train 
+val: val 
+test: (optional)
+
+# Classes
+names:
+  0: Black Mouse
+  1: White Mouse
