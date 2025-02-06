@@ -16,10 +16,11 @@ from utils.visualization import Visualizer
 from utils.stats import DetectionStats
 
 class ObjectDetectionApp:
-    def __init__(self):
+    def __init__(self, model_path):
         self.app = ctk.CTk()
         self.app.title("Real-time Object Detection and Tracking")
         self.app.geometry("1200x800")
+        self.model_path = model_path
         
         # Initialize core attributes
         self.camera = None
@@ -55,7 +56,7 @@ class ObjectDetectionApp:
     
     def load_model(self):
         try:
-            model = YOLO('models/yolo11n.pt')  # or your custom model path
+            model = YOLO(self.model_path)  # or your custom model path
             return model
         except Exception as e:
             print(f"Error loading model: {e}")
@@ -321,8 +322,9 @@ class ObjectDetectionApp:
         self.app.quit()
     
     def run(self):
+        
         self.app.mainloop()
 
-def create_app():
-    app = ObjectDetectionApp()
+def create_app(model_path):
+    app = ObjectDetectionApp(model_path)
     app.run()

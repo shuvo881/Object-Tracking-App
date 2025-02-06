@@ -2,7 +2,7 @@ task: detect
 mode: train
 model: models/yolo11n.pt
 data: train_config.yaml
-epochs: 120
+epochs: 100
 time: null
 patience: 100
 batch: 16
