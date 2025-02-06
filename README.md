@@ -73,8 +73,6 @@ Object-Tracking-App/
 │   └── video_stream.py
 │   └── visualization.py
 |
-├── utils/
-│   └── Detect/
 |
 ├── main.py
 ├── train_config.yaml
@@ -91,4 +89,18 @@ Data Files:
 * annotated: Contains annptated images with labels.
 * dataset: Contains Train and Val Data
 * raw: Contains raw images
+
+GUI File:
+* main.py: Contain GUI codes and functionalites
+
+Model Train File:
+* train.py: Contain Model Training code part
+
+Models File:
+* yolo11n.pt: This is base mode, we use it for training
+
+Utils Files:
+* Contain camera chaking, visualization, video_stream and tracking Code
+
+
 
