@@ -73,6 +73,7 @@ Object-Tracking-App/
 │   └── video_stream.py
 │   └── visualization.py
 |
+├── run/
 |
 ├── main.py
 ├── train_config.yaml
@@ -100,7 +101,10 @@ Models File:
 * yolo11n.pt: This is base mode, we use it for training
 
 Utils Files:
-* Contain camera chaking, visualization, video_stream and tracking Code
+* Contains camera chaking, visualization, video_stream and tracking Code
+
+Run File:
+* Contains trained model and statistics.
 
 
 
